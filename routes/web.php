@@ -1,0 +1,48 @@
+<?php
+
+use App\Http\Controllers\HomeController;
+use Illuminate\Support\Facades\Route;
+Route::get('language', function () {
+    app()->setLocale(request()->get('lang'));
+    session()->put('locale', request()->get('lang'));
+    return redirect()->back();
+})->name('language');
+$locale = session()->get('locale', 'en');
+Route::match(["POST", "GET"], '/', [HomeController::class, 'comingsoon'])
+    ->name('comingsoon');
+//Route::group(['prefix' => $locale],function () {
+    Route::match(["POST", "GET"], '/home', [HomeController::class, 'home'])
+        ->name('home');
+    Route::match(["POST", "GET"], '/about', [HomeController::class, 'about'])
+        ->name('about');
+    Route::match(["POST", "GET"], '/contact', [HomeController::class, 'contact'])
+        ->name('contact');
+    Route::match(["POST", "GET"], '/service', [HomeController::class, 'service'])
+        ->name('service');
+    Route::match(["POST", "GET"], '/representation_rdc', [HomeController::class, 'representation_rdc'])
+        ->name('representation_rdc');
+    Route::match(["POST", "GET"], '/representation_congo', [HomeController::class, 'representation_congo'])
+        ->name('representation_congo');
+    Route::match(["POST", "GET"], '/destination', [HomeController::class, 'destination'])
+        ->name('destination');
+    Route::match(["POST", "GET"], '/partenaire', [HomeController::class, 'partenaire'])
+        ->name('partenaire');
+    Route::match(["POST", "GET"], '/faq', [HomeController::class, 'faq'])
+        ->name('faq');
+
+
+//});
+Route::group(['prefix' => 'service'],function () {
+    Route::match(["POST", "GET"], '/reservation_billet', [HomeController::class, 'reservation_billet'])
+        ->name('reservation_billet');
+    Route::match(["POST", "GET"], '/aide_logement', [HomeController::class, 'aide_logement'])
+        ->name('aide_logement');
+    Route::match(["POST", "GET"], '/coaching', [HomeController::class, 'coaching'])
+        ->name('coaching');
+    Route::match(["POST", "GET"], '/orientation_academique', [HomeController::class, 'orientation_academique'])
+        ->name('orientation_academique');
+    Route::match(["POST", "GET"], '/assurance', [HomeController::class, 'assurance'])
+        ->name('assurance');
+    Route::match(["POST", "GET"], '/procedure_consulaire', [HomeController::class, 'procedure_consulaire'])
+        ->name('procedure_consulaire');
+});
