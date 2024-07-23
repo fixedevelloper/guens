@@ -8,7 +8,7 @@ Route::get('language', function () {
     return redirect()->back();
 })->name('language');
 $locale = session()->get('locale', 'en');
-Route::match(["POST", "GET"], '/', [HomeController::class, 'comingsoon'])
+Route::match(["POST", "GET"], '/', [HomeController::class, 'home'])
     ->name('comingsoon');
 //Route::group(['prefix' => $locale],function () {
     Route::match(["POST", "GET"], '/home', [HomeController::class, 'home'])
