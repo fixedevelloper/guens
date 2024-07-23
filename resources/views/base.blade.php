@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="{!! __('actions.confirm') !!}">
+    <meta name="description" content="{!! __('site.footer_description') !!}">
+    <meta name="keywords" content="Guen,education,formation, etudes,school,billet d'avion,{!! __('site.procedure_consulaire') !!},
+{!! __('site.service.reservation_billet_avion') !!},{!! __('site.service.aide_au_logement') !!},
+{!! __('site.service.orientation_cademique') !!},{!! __('site.service.assurance') !!},congo brazzaville,congo,rdc">
     <title>GUEN'S EDUCATION</title>
     <!-- Favicon img -->
     <link rel="shortcut icon" href="{!! asset('faicon.png') !!}">

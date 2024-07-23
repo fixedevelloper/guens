@@ -1,4 +1,4 @@
 @extends('base')
 @section('content')
-    @include('_partials._banner',['title'=>'Representation congo'])
+    @include('_partials._banner',['title'=>__('site.our_representation')])
 @endsection

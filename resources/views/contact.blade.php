@@ -1,6 +1,6 @@
 @extends('base')
 @section('content')
-    @include('_partials._banner',['title'=>"contact"])
+    @include('_partials._banner',['title'=>__('site.contact')])
     <!-- Contact area start here -->
     <section class="contact-area pt-120 pb-120">
         <div class="container">

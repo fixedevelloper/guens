@@ -29,6 +29,8 @@ Route::match(["POST", "GET"], '/', [HomeController::class, 'comingsoon'])
         ->name('partenaire');
     Route::match(["POST", "GET"], '/faq', [HomeController::class, 'faq'])
         ->name('faq');
+Route::match(["POST", "GET"], '/formation', [HomeController::class, 'formation'])
+    ->name('formation');
 
 
 //});

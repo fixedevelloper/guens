@@ -119,4 +119,11 @@ class HomeController extends Controller
 
         ]);
     }
+    public function formation()
+    {
+
+        return view('formation', [
+
+        ]);
+    }
 }

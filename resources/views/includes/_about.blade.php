@@ -19,10 +19,9 @@
             <div class="col-xl-7">
                 <div class="about__right-wrp">
                     <div class="section-header">
-                        <h5 class="wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">ABOUT US</h5>
-                        <h2 class="wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">Construisez
-                            votre  <span><img src="{!! asset('assets/images/shape/header-shape.png') !!}"
-                                              alt="shape">Carriere</span>
+                        <h5 class="wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">{!! __('site.about.title') !!}</h5>
+                        <h2 class="wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">{!! __('site.about.title1') !!}  <span><img src="{!! asset('assets/images/shape/header-shape.png') !!}"
+                                              alt="shape">{!! __('site.about.title2') !!}</span>
                         </h2>
                         <p class="wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">{!! __('site.about.description') !!}</p>
                     </div>
@@ -33,8 +32,8 @@
                                 <img src="{!! asset('assets/images/icon/about-icon1.png') !!}" alt="icon">
                             </div>
                             <div>
-                                <h4>Educator Support</h4>
-                                <p class="mt-10">Elit Aenean scelerisque vitae consequat the.</p>
+                                <h4>{!! __('site.about.but') !!}</h4>
+                                <p class="mt-10">{!! __('site.about.but_description') !!}</p>
                             </div>
                         </div>
                         <div class="about__info">
@@ -42,8 +41,8 @@
                                 <img src="{!! asset('assets/images/icon/about-icon2.png') !!}" alt="icon">
                             </div>
                             <div>
-                                <h4>Flexible Classes</h4>
-                                <p class="mt-10">Elit Aenean scelerisque vitae consequat the.</p>
+                                <h4>{!! __('site.about.mission') !!}</h4>
+                                <p class="mt-10">{!! __('site.about.mission_description') !!}</p>
                             </div>
                         </div>
                     </div>

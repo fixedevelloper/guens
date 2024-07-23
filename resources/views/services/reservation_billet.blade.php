@@ -1,6 +1,6 @@
 @extends('base')
 @section('content')
-    @include('services._banner',['title'=>"Reservation billet d'avion"])
+    @include('services._banner',['title'=>trans('site.service.reservation_billet_avion')])
     <section class="courses-details-area pt-120 pb-120">
         <div class="container">
             <div class="row g-4">
@@ -9,8 +9,8 @@
                         <div class="image mb-40">
                             <img src="{!! asset('assets/images/courses/courses-details-image1.jpg') !!}" alt="image">
                         </div>
-                        <a href="#0" class="tag">Assurance</a>
-                        <h3 class="fs-30 mt-20 mb-20">Assurance</h3>
+                        <a href="#0" class="tag">{!! trans('site.service.reservation_billet_avion') !!}</a>
+                        <h3 class="fs-30 mt-20 mb-20">{!! trans('site.service.reservation_billet_avion') !!}</h3>
                     </div>
                 </div>
                 <div class="col-lg-4 order-1 order-lg-2">

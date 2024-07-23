@@ -4,16 +4,21 @@ return [
     'banner' => [
         'title' => 'Build your
                     <span class="primary-color">Career</span>',
-        'description' => "Aonsectetur
-                    adipiscing elit Aenean scelerisque augue vitae consequat Quisque eget
-                    congue!",
+        'description' => "Helping many sub-Saharan students not only to find their way, but also to be able to precisely define the vision of their career plan",
         'link_button' => "Explore Services"
     ],
     'about' => [
         'title1' => 'Build your',
         'title2' => 'Career',
         'title' => 'ABOUT US',
-        'description' => ""
+        'description' => "<b>GUEN'S EDUCATION</b> is an academic guidance structure admitted by professionals in the sector.
+And whose main mission is to supervise the realization of study and professional projects initially towards Morocco.
+<p>And all this with the aim of guaranteeing quality service</p>",
+        'but'=>'Mission',
+        'mission'=>'Objective',
+        'but_description'=>'Helping many sub-Saharan students not only to find their way, but also to be able to precisely define the vision of their career plan',
+        'mission_description'=>"Build a reputation and expand our activities across the countries of the sub-region.
+        And thus be able to diversify our service offering by offering new destinations"
     ],
     'service_tile' => [
         "our_service" => "OUR SERVICES",
@@ -102,8 +107,8 @@ return [
 
 
     ],
-    'trial' => "Inexpensive E-Learning Options <br> Tailored for You",
-    'start_button' => "Start Free Trial",
+    'trial' => "Reserve your place for this start <br>of the school year ",
+    'start_button' => "Online registration",
     'contact' => 'Contact',
     'call_us' => "Call us now",
     'french' => "French",
@@ -120,9 +125,9 @@ return [
                     Your Next Service"
     ],
     'contact_us' => 'Contact us',
-    'footer_description' => "Phasellus ultricies aliquam volutpat
-                    ullamcorper laoreet neque, a lacinia
-                    curabitur lacinia mollis",
+    'footer_description' => "<b>GUEN'S EDUCATION</b> is an academic guidance structure admitted by professionals in the sector.
+And whose main mission is to supervise the realization of study and professional projects initially towards Morocco.
+<p>And all this with the aim of guaranteeing quality service</p>",
     'home' => 'Home',
     'about_us' => "About Us",
     'follown_us' => "Follow Us On",
@@ -137,5 +142,25 @@ return [
     'your_message' => "Your message",
     'send_now' => "Send now",
     'get_in' => "Get",
-    'touch' => "Touch"
+    'touch' => "Touch",
+    'our_formation'=>'Our Formations',
+    'formation'=>[
+        'marketing'=>'Marketing',
+        'Comptabilite'=>'Accounting',
+        'Communication'=>'Communication',
+        'Entrepreneuriat'=>'Entrepreneurship',
+        'kinesitherapie'=>'physiotherapy',
+        'psychomotricité'=>'psychomotor skills',
+        'orthophonie'=>'Speech therapy',
+        'Orthoptie'=>'Orthoptics',
+        'infirmier_polyvalent'=>'versatile nursing',
+        'infirmieranesthésisteetreanimation'=>'nurse anesthetist and resuscitation',
+        'biomédical'=>'biomedical',
+        'sciencedelasante'=>'Health Science',
+        'Informatique'=>'Informatique',
+        'Génie civil'=>'Civil engineering',
+        'Génie Industriel'=>'Industrial Engineering',
+        'Diététique'=>'Dietetic',
+
+    ]
 ];

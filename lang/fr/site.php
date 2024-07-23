@@ -4,16 +4,21 @@ return [
     'banner' => [
         'title' => 'Construsez votre
                     <span class="primary-color">Carriere</span>',
-        'description' => "Aonsectetur
-                    adipiscing elit Aenean scelerisque augue vitae consequat Quisque eget
-                    congue!",
+        'description' => "Aider de nombreux etudiants subsahariens non seulement,a bien s oriénter,mais egalement de pouvoir définir avec precision la vision de leur plan de carrière",
         'link_button' => "Explore Services"
     ],
     'about' => [
         'title1' => 'Construisez votre',
         'title2' => 'Carriere',
         'title' => 'A PROPOS DE NOUS',
-        'description' => ""
+        'description' => "<b>GUEN'S EDUCATION</b> est une structure d'orientation académique admistrée par des professionnels du secteur .
+Et qui a pour mission pricipale l'encadrement de la concrétisation des projets d'etudes et professionnels dans un premier temps vers le maroc.
+<p>Et tout ceci dans le but de garantir un service de qualité</p>",
+        'but'=>'But',
+        'mission'=>'Objectif',
+        'but_description'=>'Aider de nombreux etudiants subsahariens non seulement,a bien s oriénter,mais egalement de pouvoir définir avec precision la vision de leur plan de carrière',
+        'mission_description'=>"Se construire une notoriéte et étendre nos activités à travers les pays de la sous région.
+        Et Ainsi pouvoir diversifier notre offre de services en proposant de nouvelles destinations"
     ],
     'service_tile' => [
         "our_service" => "NOS SERVICES",
@@ -101,8 +106,8 @@ return [
 
 
     ],
-    'trial' => "Inexpensive E-Learning Options <br> Tailored for You",
-    'start_button' => "Commencer l'essai gratuit",
+    'trial' => "Réserver votre place <br>  pour cette rentrée",
+    'start_button' => "Inscription en ligne",
     'contact' => 'Contact',
     'call_us' => "Appelez-nous maintenant",
     'french' => "Français",
@@ -119,9 +124,9 @@ return [
                     Votre prochain service"
     ],
     'contact_us' => 'Contactez-nous',
-    'footer_description' => "Phasellus ultricies aliquam volutpat
-                    ullamcorper laoreet neque, a lacinia
-                    curabitur lacinia mollis",
+    'footer_description' => "<b>GUEN'S EDUCATION</b> est une structure d'orientation académique admistrée par des professionnels du secteur .
+Et qui a pour mission pricipale l'encadrement de la concrétisation des projets d'etudes et professionnels dans un premier temps vers le maroc.
+<p>Et tout ceci dans le but de garantir un service de qualité</p>",
     'home' => 'Accueil',
     'about_us' => "À propos de nous",
     'follown_us' => "Suivez-nous sur",
@@ -136,5 +141,25 @@ return [
     'your_message' => "Votre message",
     'send_now' => "Envoyer maintenant",
     'get_in' => "Entrer en ",
-    'touch' => "Contact"
+    'touch' => "Contact",
+    'our_formation'=>'Nos Formations',
+    'formation'=>[
+        'marketing'=>'Marketing',
+        'Comptabilite'=>'Comptabilite',
+        'Communication'=>'Communication',
+        'Entrepreneuriat'=>'Entrepreneuriat',
+        'kinesitherapie'=>'kinesitherapie',
+        'psychomotricité'=>'psychomotricité',
+        'orthophonie'=>'Orthophonie',
+        'Orthoptie'=>'Orthoptie',
+        'infirmier_polyvalent'=>'infirmier polyvalent',
+        'infirmieranesthésisteetreanimation'=>'infirmier anesthésiste et réanimation',
+        'biomédical'=>'biomédical',
+        'sciencedelasante'=>'Science de la santé',
+        'Informatique'=>'Informatique',
+        'Génie civil'=>'Génie civil',
+        'Génie Industriel'=>'Génie Industriel',
+        'Diététique'=>'Diététique',
+
+    ]
 ];

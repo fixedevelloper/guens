@@ -68,6 +68,9 @@
                                     <a href="{!! route('about') !!}">{!! __('site.about_us') !!}</a>
                                 </li>
                                 <li>
+                                    <a href="{!! route('formation') !!}">{!! __('site.our_formation') !!}</a>
+                                </li>
+                                <li>
                                     <a href="{!! route('destination') !!}">{!! __('site.our_destination') !!}</a>
                                 </li>
                                 <li>

@@ -1,6 +1,6 @@
 @extends('base')
 @section('content')
-    @include('services._banner',['title'=>"Procedure consulaire"])
+    @include('services._banner',['title'=>trans('site.service.procedure_consulaire')])
     <section class="courses-details-area pt-120 pb-120">
         <div class="container">
             <div class="row g-4">
