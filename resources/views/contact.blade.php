@@ -2,7 +2,7 @@
 @section('content')
     @include('_partials._banner',['title'=>__('site.contact')])
     <!-- Contact area start here -->
-    <section class="contact-area pt-120 pb-120">
+    <section class="contact-area pt-120 pb-120" xmlns="http://www.w3.org/1999/html">
         <div class="container">
             <div class="contact__info pb-120">
                 <div class="row g-4">
@@ -91,20 +91,21 @@
                                 <span>{!! __('site.touch') !!} <img src="{!! asset('assets/images/shape/header-shape.png') !!}" alt="shape"></span>
                             </h2>
                         </div>
-                        <form action="#">
+                        <form method="POST">
+                            @csrf
                             <div class="row g-4">
                                 <div class="col-6">
                                     <label for="name">{!! __('site.your_name') !!}*</label>
-                                    <input id="name" type="text" placeholder="{!! __('site.your_name') !!}">
+                                    <input name="name" id="name" type="text" placeholder="{!! __('site.your_name') !!}">
                                 </div>
                                 <div class="col-6">
                                     <label for="email">{!! __('site.your_email') !!}*</label>
-                                    <input id="email" type="email" placeholder="{!! __('site.your_email') !!}">
+                                    <input name="email" id="email" type="email" placeholder="{!! __('site.your_email') !!}">
                                 </div>
                             </div>
                             <label for="review">{!! __('site.your_message') !!}*</label>
-                            <textarea name="review" id="review"></textarea>
-                            <a href="#0" class="btn-one">{!! __('site.send_now') !!}<i class="fa-light fa-arrow-right-long"></i></a>
+                            <textarea name="message" id="review"></textarea>
+                            <button class="btn-one">{!! __('site.send_now') !!}<i class="fa-light fa-arrow-right-long"></i></button>
                         </form>
                     </div>
                 </div>

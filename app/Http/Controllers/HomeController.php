@@ -4,6 +4,14 @@
 namespace App\Http\Controllers;
 
 
+
+use App\Helper\Helper;
+use App\Models\Contact;
+use App\Models\Message;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Validator;
+
 class HomeController extends Controller
 {
 
@@ -21,9 +29,36 @@ class HomeController extends Controller
 
         ]);
     }
-    public function contact()
+    public function contact(Request $request)
     {
-
+        if ($request->method()=='POST'){
+            $validator = Validator::make($request->all(), [
+                'name' => 'required|string',
+                'message' => 'required',
+                'email' => 'required|email'
+            ]);
+            if ($validator->fails()) {
+                return back()->with($validator->errors()->getMessages());
+            }
+            DB::beginTransaction();
+            $contact=Contact::query()->firstWhere(['email'=>$request->email]);
+            if (is_null($contact)){
+                $contact=new Contact();
+                $contact->email=$request->email;
+            }
+            $contact->name=$request->name;
+            $contact->save();
+            $message=new Message();
+            $message->message=$request->message;
+            $message->contact_id=$contact->id;
+            $message->save();
+            Helper::send_contact([
+                'name'=>$request->name,
+                'email'=>$request->email,
+                'message'=>$request->message
+            ]);
+            DB::commit();
+        }
         return view('contact', [
 
         ]);
@@ -125,5 +160,8 @@ class HomeController extends Controller
         return view('formation', [
 
         ]);
+    }
+    function registerFormation(){
+        return view('form.register');
     }
 }
