@@ -9,7 +9,7 @@ Route::get('language', function () {
 })->name('language');
 $locale = session()->get('locale', 'en');
 Route::match(["POST", "GET"], '/', [HomeController::class, 'home'])
-    ->name('comingsoon');
+    ->name('home');
 //Route::group(['prefix' => $locale],function () {
     Route::match(["POST", "GET"], '/home', [HomeController::class, 'home'])
         ->name('home');
