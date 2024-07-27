@@ -1,4 +1,5 @@
 @extends('base')
+@section('description')Guen's education,pointe noire ,congo brasaville@endsection
 @section('content')
     @include('_partials._banner',['title'=>__('site.contact')])
     <!-- Contact area start here -->

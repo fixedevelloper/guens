@@ -62,7 +62,7 @@
                     <ul>
                         <li><a href="{!! route('home') !!}">{!! __('site.home') !!}</a></li>
                         <li>
-                            <a href="#0">Guen's <i class="fa-solid fa-angle-down"></i></a>
+                            <a href="{!! route('home') !!}">Guen's <i class="fa-solid fa-angle-down"></i></a>
                             <ul class="sub-menu">
                                 <li>
                                     <a href="{!! route('about') !!}">{!! __('site.about_us') !!}</a>
@@ -160,9 +160,9 @@
                 <form id="langform" action="{{ route('language') }}" method="get" class="d-flex align-items-center">
                     <div class="input-group mb-3">
                         @if (session('locale') == 'fr')
-                        <img class="input-group-text" height="50" src="{!! asset('assets/images/lang/fr.png') !!}">
+                        <img class="input-group-text" height="50" src="{!! asset('assets/images/lang/fr.png') !!}" alt="fr">
                         @else
-                            <img class="input-group-text" height="50" src="{!! asset('assets/images/lang/gb.png') !!}">
+                            <img class="input-group-text" height="50" src="{!! asset('assets/images/lang/gb.png') !!}" alt="fr">
                         @endif
                         <div class="select-option">
                             <select name="lang" id="lang" onchange="this.form.submit()">

@@ -1,4 +1,5 @@
 @extends('base')
+@section('description'){!! __('site.service.description.aide_au_logement') !!}@endsection
 @section('content')
 @include('services._banner',['title'=>trans('site.service.aide_au_logement')])
 <section class="courses-details-area pt-120 pb-120">

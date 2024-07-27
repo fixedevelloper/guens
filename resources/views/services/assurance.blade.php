@@ -1,4 +1,5 @@
 @extends('base')
+@section('description'){!! __('site.service.description.assurance') !!}@endsection
 @section('content')
     @include('services._banner',['title'=>trans('site.service.assurance')])
     <!-- Courses area start here -->

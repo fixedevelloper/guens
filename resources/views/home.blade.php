@@ -1,4 +1,7 @@
 @extends('base')
+@section('description')
+    {!! __('site.footer_description') !!}
+@endsection
 @section('content')
     <!-- Banner area start here -->
     <section class="banner-area pt-190 pb-190 sub-bg bg-image paralax__animation"
