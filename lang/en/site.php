@@ -56,22 +56,24 @@ And whose main mission is to supervise the realization of study and professional
     'faq' => [
         'title' => "Frequently Asked Questions",
         'questions' => [
-            'q1' => "How long should a business plan be?",
-            'q2' => "How long should a business plan be?",
-            'q3' => "How long should a business plan be?",
-            'q4' => "How long should a business plan be?",
+            'q1' => "What is an academic guidance structure?",
+            'q2' => "Who can benefit from the services of an academic guidance structure?",
+            'q3' => "How to make an appointment with an academic guidance advisor?",
+            'q4' => "How can academic guidance services help with the transition to university or the world of work?",
 
         ],
         'responses' => [
-            'r1' => "It is a long established fact that a reader be distracted by
-                                        the readable content of a page when looking a its layout.
-                                        Many desktop publishing packages and web page.",
-            'r2' => "It is a long established fact that a reader be distracted by
-                                        the readable content of a page when looking a its layout.
-                                        Many desktop publishing packages and web page.",
-            'r3' => "It is a long established fact that a reader be distracted by
-                                        the readable content of a page when looking a its layout.
-                                        Many desktop publishing packages and web page."
+            'r1' => "An academic guidance structure is a service or organization dedicated to helping students choose and plan their educational path. She provides advice on subject choices, possible careers,
+             training opportunities, and strategies for succeeding in academia.",
+            'r2' => "Academic counseling services are available to students of all levels, from elementary school students to university students. They can also be useful for parents and professionals of
+            education that seek to support the academic development of young people.",
+            'r3' => "You can usually make an appointment online through our website or by contacting our office directly by phone or email.
+            Details for making an appointment are often indicated on our website or in our information brochures.",
+            'r4'=>'Academic guidance services provide valuable support during the transition to university or the world of work by:
+
+   -Assistance in the selection of university programs or professional paths.
+    -Advice on preparing applications and interviews.
+    -Assistance in career planning and professional skills development.'
         ]
     ],
     'testimonials' => [
@@ -80,30 +82,12 @@ And whose main mission is to supervise the realization of study and professional
         'our' => "Our",
         'to_say' => "people",
         'to_our' => "say about us",
-        'silde1' => "Nullam dignissim, ante scelerisque is euismod
-                                            fermentum
-                                            odio sem
-                                            semper is erat, a
-                                            feugiat leo urna eget eros. Duis
-                                            Aenean a imperdiet risus. Aliquam pellentesque nisi dui eget dapibus
-                                            enim ornare eu.
-                                            Morbi",
-        'silde2' => "Nullam dignissim, ante scelerisque is euismod
-                                            fermentum
-                                            odio sem
-                                            semper is erat, a
-                                            feugiat leo urna eget eros. Duis
-                                            Aenean a imperdiet risus. Aliquam pellentesque nisi dui eget dapibus
-                                            enim ornare eu.
-                                            Morbi",
-        'silde3' => "Nullam dignissim, ante scelerisque is euismod
-                                            fermentum
-                                            odio sem
-                                            semper is erat, a
-                                            feugiat leo urna eget eros. Duis
-                                            Aenean a imperdiet risus. Aliquam pellentesque nisi dui eget dapibus
-                                            enim ornare eu.
-                                            Morbi",
+        'silde1' => "Je suis diplômée depuis trois ans maintenant, et je tiens à exprimer ma gratitude envers la structure d'orientation académique qui m'a aidée à choisir ma voie professionnelle. Leur assistance a été déterminante dans ma décision de poursuivre des études en marketing, un domaine qui me passionne profondément. Ils ont non seulement aidé à choisir le bon programme d'études, mais ont également offert des conseils précieux sur la préparation aux entretiens et la recherche d'emploi. Leur soutien m'a permis de réussir
+         dans ma carrière actuelle et je suis heureuse de partager mon expérience positive.",
+        'silde2' => "En tant que professionnelle de l'éducation, je comprends l'importance d'un bon accompagnement académique. J'ai eu l'occasion de collaborer avec cette structure d'orientation académique et j'ai été impressionnée par leur approche méthodique et leur engagement envers les étudiants. Ils utilisent des outils modernes pour évaluer les besoins des étudiants et les guider vers des solutions concrètes. Leurs services sont bien conçus pour aider les étudiants à réaliser leur potentiel
+         et à faire des choix éclairés pour leur avenir académique et professionnel.",
+        'silde3' => "En tant que parent, j'étais préoccupé par le choix de carrière de ma fille et je ne savais pas comment l'aider au mieux. La structure d'orientation académique a fourni un soutien précieux, non seulement pour Laura, mais aussi pour nous, en tant que famille. Les conseillers ont pris le temps d'écouter ses aspirations et ses préoccupations, et ont proposé des solutions adaptées. Laura a pu explorer différentes possibilités d'études supérieures et a finalement trouvé une voie qui l'enthousiasme vraiment. Je suis reconnaissant
+         pour leur professionnalisme et leur approche personnalisée.",
 
 
     ],

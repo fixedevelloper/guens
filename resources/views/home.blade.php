@@ -1,6 +1,17 @@
 @extends('base')
+@section('keywords')
+Guen,education,formation,Planification académique Congo,Guidance académique pour étudiants Congo,
+Accompagnement dans le choix de carrière scolaire Congo,
+Guidance académique pour étudiants Congo,
+Accompagnement dans le choix de carrière scolaire Congo,
+Planification de parcours éducatifs Congo,
+Évaluation des choix académiques Congo,
+Conseils pour orientation professionnelle Congo,
+Soutien académique pour élèves Congo,procédure consulaire,coaching,assurance,reservation billet d'avion, rdc,republique democratique du congo
+@endsection
 @section('description')
-    {!! __('site.footer_description') !!}
+    Recevez des conseils d'orientation scolaire adaptés aux besoins des étudiants.
+    Optimisez les choix académiques avec des outils et des ressources pour une carrière réussie
 @endsection
 @section('content')
     <!-- Banner area start here -->
@@ -47,6 +58,7 @@
                     <span class="fs-14">{!! __('site.service.procedure_consulaire') !!}</span>
                 </div>
             </div>
+            {{--<img src="{!! asset('assets/images/banner/hero.png') !!}" alt="image">--}}
             <img src="{!! asset('assets/images/banner/hero.png') !!}" alt="image">
             <img class="hero-shape1" src="{!! asset('assets/images/shape/banner-hero-line.png') !!}" alt="shape">
             <img class="hero-shape2" src="{!! asset('assets/images/shape/banner-hero-shape.png') !!}" alt="shape">
@@ -237,6 +249,23 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="accordion-item shadow border-none wow fadeInDown" data-wow-delay="400ms"
+                             data-wow-duration="1500ms">
+                            <h2 class="accordion-header" id="headingfour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapsefour" aria-expanded="false"
+                                        aria-controls="collapsefour">
+                                    {!! __('site.faq.questions.q4') !!}
+                                </button>
+                            </h2>
+                            <div id="collapsefour" class="accordion-collapse collapse"
+                                 aria-labelledby="headingfour" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p> {!! __('site.faq.responses.r4') !!}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-6 order-1 order-lg-2 wow fadeInLeft" data-wow-delay="200ms"
@@ -308,8 +337,8 @@
                                         <p class="fw-500 fs-18">{!! __('site.testimonials.silde1') !!}.</p>
                                         <div class="d-flex align-items-center justify-content-between gap-4 mt-30">
                                             <div>
-                                                <h4>Sumaya Islam</h4>
-                                                <span>Web Designer</span>
+                                                <h4>Marie-Claire Kofi</h4>
+                                                <span>Diplômée en Marketing</span>
                                                 <div class="star mt-1">
                                                     <i class="fa-sharp fa-solid fa-star"></i>
                                                     <i class="fa-sharp fa-solid fa-star"></i>
@@ -329,8 +358,8 @@
                                         <p class="fw-500 fs-18">{!! __('site.testimonials.silde2') !!}.</p>
                                         <div class="d-flex align-items-center justify-content-between gap-4 mt-30">
                                             <div>
-                                                <h4>Kawser Ahmed</h4>
-                                                <span>Web Designer</span>
+                                                <h4>Dr. Sophie Martin</h4>
+                                                <span>Conseillère d'orientation scolaire</span>
                                                 <div class="star mt-1">
                                                     <i class="fa-sharp fa-solid fa-star"></i>
                                                     <i class="fa-sharp fa-solid fa-star"></i>
@@ -347,11 +376,11 @@
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="testimonial__item">
-                                        <p class="fw-500 fs-18">{!! __('site.testimonials.silde2') !!}.</p>
+                                        <p class="fw-500 fs-18">{!! __('site.testimonials.silde3') !!}.</p>
                                         <div class="d-flex align-items-center justify-content-between gap-4 mt-30">
                                             <div>
-                                                <h4>Mazedul Islam</h4>
-                                                <span>Marketing Expert</span>
+                                                <h4>Massolop didier</h4>
+                                                <span>Enseignant</span>
                                                 <div class="star mt-1">
                                                     <i class="fa-sharp fa-solid fa-star"></i>
                                                     <i class="fa-sharp fa-solid fa-star"></i>

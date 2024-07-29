@@ -1,5 +1,23 @@
 @extends('base')
-@section('description'){!! __('site.service.description.aide_au_logement') !!}@endsection
+@section('title')Aide au Logement : Trouvez les Meilleures Subventions et Assistances Disponibles @endsection
+@section('description')Découvrez les options d'aide au logement au Congo. Obtenez des informations sur les subventions,
+les programmes d'assistance et les ressources disponibles pour vous aider à trouver et financer votre logement @endsection
+@section('keywords')Aide au Logement,
+Subventions pour Logement,
+Assistance au Logement,
+Aide Financière pour Logement,
+Programmes d'Aide au Logement,
+Aide au Logement Social,
+Aide au Logement pour Étudiants,
+Aide au Logement pour Familles,
+Aide au Logement d'Urgence,
+Aide au Logement pour Personnes à Faibles Revenus,
+Aide au Logement Locatif,
+Soutien au Logement,
+Aide au Logement Subventionnée,
+Assistance au Logement pour Personnes Âgées,
+Aide au Logement Gouvernementale,
+@endsection
 @section('content')
 @include('services._banner',['title'=>trans('site.service.aide_au_logement')])
 <section class="courses-details-area pt-120 pb-120">

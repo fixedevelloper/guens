@@ -15,6 +15,12 @@
     --transition: all 0.5s;
     --shadow: 0px 4px 25px 0px #0000000f;
 }
+.form-register{
+    border: #30a83f solid 1px;
+    padding: 40px;
+    border-radius: 5px;
+
+}
 .current{
     color: #2e71b7;
 }

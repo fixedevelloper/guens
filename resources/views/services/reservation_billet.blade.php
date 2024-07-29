@@ -1,5 +1,24 @@
 @extends('base')
-@section('description'){!! __('site.service.description.reservation_billet_avion') !!}@endsection
+@section('title')Réservation Billet d’Avion au Congo : Trouvez les Meilleurs Tarifs @endsection
+@section('description')Réservez vos billets d'avion au Congo facilement et rapidement. Comparez les offres des compagnies aériennes, trouvez les meilleurs tarifs et planifiez vos voyages en toute sérénité. @endsection
+@section('keywords')Réservation Billet d’Avion au Congo,
+Billet d’Avion pour le Congo,
+Réservation Vol Congo,
+Réserver Vol Congo en Ligne,
+Billets d’Avion Abordables Congo,
+Réservation Vols au Congo,
+Meilleurs Tarifs Billets d’Avion Congo,
+Réservation Billets d’Avion Kinshasa,
+Vols pour Kinshasa,
+Réservation Billets d’Avion Brazzaville,
+Vols pour Brazzaville,
+Réservation Billets d’Avion Congo-Brazzaville,
+Réservation Vols Internationaux Congo,
+Billet d’Avion Économique Congo,
+Offres Billets d’Avion Congo,
+réservation de vol au Congo,
+acheter billet d’avion au le Congo
+@endsection
 @section('content')
     @include('services._banner',['title'=>trans('site.service.reservation_billet_avion')])
     <section class="courses-details-area pt-120 pb-120">

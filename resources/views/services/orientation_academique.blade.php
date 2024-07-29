@@ -1,17 +1,22 @@
 @extends('base')
-@section('description'){!! __('site.service.description.orientation_cademique') !!}@endsection
+@section('title')Orientation Académique - Services de Conseil pour Choisir le Meilleur Parcours Scolaire @endsection
+@section('description')Découvrez nos services d'orientation académique pour aider les étudiants à choisir leur parcours scolaire et professionnel.
+Accompagnement personnalisé et conseils experts pour un avenir réussi.@endsection
+@section('keywords')
+    Aide pour orientation académique,Comment choisir une orientation académique,Conseils pour orientation académique,Orientation Académique,Conseil en Orientation Académique,Services d'Orientation Académique,Accompagnement Orientation Académique,Guidance Académique
+@endsection
 @section('content')
-    @include('services._banner',['title'=>trans('site.service.orientation_cademique')])
+    @include('services._banner',['title'=>trans('site.service.orientation_cademique_seo.tiltle')])
     <section class="courses-details-area pt-120 pb-120">
         <div class="container">
             <div class="row g-4">
                 <div class="col-lg-8 order-2 order-lg-1">
                     <div class="courses-details__item-left">
                         <div class="image mb-40">
-                            <img src="{!! asset('assets/images/courses/courses-details-image1.jpg') !!}" alt="image">
+                            <img title="Orientation Académique - Services de Conseil pour Choisir le Meilleur Parcours Scolaire"  src="{!! asset('assets/images/courses/courses-details-image1.jpg') !!}" alt="Session de conseil en orientation académique pour étudiants.">
                         </div>
-                        <a href="#0" class="tag">{!! __('site.service.orientation_cademique') !!}</a>
-                        <h3 class="fs-30 mt-20 mb-20">{!! __('site.service.orientation_cademique') !!}</h3>
+                        <a href="#0" class="tag">{!! __('site.service.orientation_cademique_seo.tiltle') !!}</a>
+                        <h3 class="fs-30 mt-20 mb-20">{!! __('site.service.orientation_cademique_seo.h3') !!}</h3>
                     </div>
                 </div>
                 <div class="col-lg-4 order-1 order-lg-2">
@@ -20,7 +25,7 @@
                             <h3>{!! __('site.service.service') !!}</h3>
                             <ul>
                                 <li>
-                                    <a href="{!! route('orientation_academique') !!}">{!! __('site.service.orientation_cademique') !!}</a>
+                                    <a href="{!! route('orientation_academique') !!}">{!! __('site.service.orientation_cademique.tiltle') !!}</a>
                                 </li>
                                 <li>
                                     <a href="{!! route('coaching') !!}">{!! __('site.service.coaching') !!}</a>

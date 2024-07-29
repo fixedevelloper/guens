@@ -1,5 +1,24 @@
 @extends('base')
-@section('description'){!! __('site.service.description.coaching') !!}@endsection
+@section('title')Coaching - Transformez Votre Vie avec des Conseils Expert @endsection
+@section('description')Atteignez de nouveaux sommets avec notre coaching exécutif.
+Recevez des conseils personnalisés pour exceller en tant que dirigeant et leader @endsection
+@section('keywords')Coaching Personnel,
+    Coaching de Carrière,
+    Coaching de Vie,
+    Coaching Professionnel,
+    Coaching en Leadership,
+    Coaching de Performance,
+    Coaching Exécutif,
+    Coaching de Groupe,
+    Coaching en Développement Personnel,
+    Coaching en Entreprise,
+    Coaching pour Entrepreneurs,
+    Coaching en Gestion du Stress,
+    Coaching pour Réussite,
+    Coaching pour Transformation,
+    Coaching en Compétences Interpersonnelles,
+@endsection
+
 @section('content')
     @include('services._banner',['title'=>trans('site.service.coaching')])
     <section class="courses-details-area pt-120 pb-120">

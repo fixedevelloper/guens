@@ -7,10 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="Q65peJEa0gelkheVOIbosNiHLIkluEI6g17_ir3HzOM" />
     <meta name="description" content="@yield('description')">
-    <meta name="keywords" content="Guen,education,formation, etudes,school,billet d'avion,{!! __('site.procedure_consulaire') !!},
-{!! __('site.service.reservation_billet_avion') !!},{!! __('site.service.aide_au_logement') !!},
-{!! __('site.service.orientation_cademique') !!},{!! __('site.service.assurance') !!},congo brazzaville,congo,rdc">
-    <title>GUEN'S EDUCATION</title>
+    <meta name="keywords" content="@yield('keywords')">
+
+    <title>@yield('title') - GUEN'S EDUCATION</title>
     <!-- Favicon img -->
     <link rel="shortcut icon" href="{!! asset('faicon.png') !!}">
     <!-- Bootstarp min css -->
