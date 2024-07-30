@@ -61,8 +61,7 @@
         <div class="d-none d-lg-block">
             <h5 class="text-white mb-20">About Us</h5>
             <p class="paragraph-light fs-16">
-                Unleash the full potential of your website and elevate its online presence with our comprehensive
-                online courses.
+              {{ __('site.about.description') }}
             </p>
         </div>
         <div class="sidebar__search d-block d-lg-none">
@@ -72,11 +71,11 @@
         <div class="sidebar__contact-info mt-30">
             <h5 class="text-white mb-20">Contact Info</h5>
             <ul>
-                <li><i class="fa-solid fa-location-dot"></i> <a href="#0">example@example.com</a>
+                <li><i class="fa-solid fa-location-dot"></i> <a href="#0">Pointe Noire,République du congo, 45463</a>
                 </li>
                 <li class="py-2"><i class="fa-solid fa-phone-volume"></i> <a href="tel:+242044117998">+242 04-411-79-98</a>
                 </li>
-                <li><i class="fa-solid fa-paper-plane"></i> <a href="#0">info.company@gmail.com</a>
+                <li><i class="fa-solid fa-paper-plane"></i> <a href="#0">{!! env('APP_EMAIL') !!}</a>
                 </li>
             </ul>
         </div>
@@ -102,6 +101,25 @@
                         <i class="fa-brands text-white fa-youtube"></i></a>
                 </li>
             </ul>
+        </div>
+        <div class="sidebar mt-3">
+        <form id="langform" action="{{ route('language') }}" method="get" class="d-flex align-items-center">
+            <div class="input-group mb-3">
+                @if (session('locale') == 'fr')
+                    <img class="input-group-text" height="50" src="{!! asset('assets/images/lang/fr.png') !!}" alt="fr">
+                @else
+                    <img class="input-group-text" height="50" src="{!! asset('assets/images/lang/gb.png') !!}" alt="fr">
+                @endif
+                <div class="select-option">
+                    <select name="lang" id="lang" onchange="this.form.submit()">
+                        <option value="en" @if (Session::get('locale', 'en') == 'en') selected @endif> {!! __('site.english') !!}
+                        </option>
+
+                        <option value="fr" @if (session('locale') == 'fr') selected @endif> {!! __('site.french') !!}</option>
+                    </select>
+                </div>
+            </div>
+        </form>
         </div>
     </div>
 </div>

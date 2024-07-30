@@ -54,8 +54,11 @@
 <header class="header-area">
     <div class="header__container">
         <div class="header__main">
-            <a href="{!! route('home') !!}" class="logo">
+            <a href="{!! route('home') !!}" class="logo d-none d-lg-block">
                 <img src="{!! asset('logo.png') !!}" alt="logo">
+            </a>
+            <a href="{!! route('home') !!}" class="logo d-block d-lg-none">
+                <img style="width: 100px!important;" src="{!! asset('logo.png') !!}" alt="logo">
             </a>
             <div class="main-menu">
                 <nav>
@@ -157,7 +160,7 @@
                     </div>
                 </div>
 
-                <form id="langform" action="{{ route('language') }}" method="get" class="d-flex align-items-center">
+                <form id="langform" action="{{ route('language') }}" method="get" class="d-none d-lg-block d-flex align-items-center">
                     <div class="input-group mb-3">
                         @if (session('locale') == 'fr')
                         <img class="input-group-text" height="50" src="{!! asset('assets/images/lang/fr.png') !!}" alt="fr">
