@@ -1,4 +1,18 @@
 @extends('base')
+@section('keywords')
+    Questions fréquentes orientation scolaire en République Démocratique du Congo,
+    Conseils d'orientation académique RDC,
+    Réponses aux questions sur l'orientation scolaire au Congo,
+    Orientation académique au Congo FAQ,
+    Aide à l'orientation académique en République Démocratique du Congo,
+    Questions courantes orientation éducative Congo,
+    Informations sur l'orientation scolaire en RDC,
+    Guide d'orientation académique au Congo
+@endsection
+@section('description')
+    Consultez notre FAQ sur l'orientation académique au Congo pour trouver des réponses aux questions courantes sur
+    les services d'orientation scolaire et les programmes éducatifs en République Démocratique du Congo
+@endsection
 @section('content')
     @include('_partials._banner',['title'=>__('site.faq.title')])
     <section class="faq-two-area pt-120 pb-120">
@@ -82,7 +96,7 @@
                 <div class="col-lg-6 order-1 order-lg-2 wow fadeInLeft" data-wow-delay="200ms"
                      data-wow-duration="1500ms">
                     <div class="faq-three__image">
-                        <img class="w-100" src="{!! asset('assets/images/faq/faq-three-image.png') !!}" alt="image">
+                        <img class="w-100" src="{!! asset('assets/images/site/faq.png') !!}" alt="Questions fréquentes sur l'orientation académique au Congo">
                         <img class="dots1 pxl-image-zoom" src="{!! asset('assets/images/shape/faq-dots-top.png') !!}" alt="shape">
                         <img class="dots2 pxl-image-zoom" src="{!! asset('assets/images/shape/faq-dots-bottom.png') !!}" alt="shape">
                         <img class="shape1" src="{!! asset('assets/images/shape/faq-shape-bottom.png') !!}" alt="shape">

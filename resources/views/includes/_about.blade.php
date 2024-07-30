@@ -7,8 +7,8 @@
                         <img class="about-dots sway__animation" src="{!! asset('assets/images/shape/about-dots.png') !!}"
                              alt="shape">
                         <img class="about-circle" src="{!! asset('assets/images/shape/about-circle.png') !!}" alt="shape">
-                        <img src="{!! asset('assets/images/about/about-image1.png') !!}" alt="image">
-                        <img class="sm-image" src="{!! asset('assets/images/about/about-image2.png') !!}" alt="image">
+                        <img src="{!! asset('assets/images/site/about1.png') !!}" alt="Structure de Procédure Consulaire au Congo - Services et Assistance Administrative">
+                        <img class="sm-image" src="{!! asset('assets/images/site/about2.png') !!}" alt="Support pour les démarches consulaires en République Démocratique du Congo">
                         <div class="count-info">
                             <h5 class="primary-color fs-28"><span class="count primary-color">25</span>+</h5>
                             <span class="fs-14">Years Experience</span>

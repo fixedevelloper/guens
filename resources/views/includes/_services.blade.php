@@ -18,7 +18,7 @@
                     <div class="swiper-slide">
                         <div class="courses__item">
                             <div class="courses__image image">
-                                <img src="{!! asset('assets/images/courses/courses-image1.png') !!}" alt="image">
+                                <img src="{!! asset('assets/images/site/370x220_Orientation.png') !!}" alt="image">
                                 <div class="courses-price">
                                     <h5 class="fs-18">01</h5>
                                 </div>
@@ -75,7 +75,7 @@
                     <div class="swiper-slide">
                         <div class="courses__item">
                             <div class="courses__image image">
-                                <img src="{!! asset('assets/images/courses/courses-image1.png') !!}" alt="image">
+                                <img src="{!! asset('assets/images/site/370x220_Coaching.png') !!}" alt="image">
                                 <div class="courses-price">
                                     <h5 class="fs-18">02</h5>
                                 </div>
@@ -131,7 +131,7 @@
                     <div class="swiper-slide">
                         <div class="courses__item">
                             <div class="courses__image image">
-                                <img src="{!! asset('assets/images/courses/courses-image1.png') !!}" alt="image">
+                                <img src="{!! asset('assets/images/site/370x220_Procédure.png') !!}" alt="image">
                                 <div class="courses-price">
                                     <h5 class="fs-18">03</h5>
                                 </div>
@@ -188,7 +188,7 @@
                     <div class="swiper-slide">
                         <div class="courses__item">
                             <div class="courses__image image">
-                                <img src="{!! asset('assets/images/courses/courses-image1.png') !!}" alt="image">
+                                <img src="{!! asset('assets/images/site/assurrance.jpg') !!}" alt="image">
                                 <div class="courses-price">
                                     <h5 class="fs-18">04</h5>
                                 </div>
@@ -245,7 +245,7 @@
                     <div class="swiper-slide">
                         <div class="courses__item">
                             <div class="courses__image image">
-                                <img src="{!! asset('assets/images/courses/courses-image1.png') !!}" alt="image">
+                                <img src="{!! asset('assets/images/site/reservation.jpg') !!}" alt="image">
                                 <div class="courses-price">
                                     <h5 class="fs-18">05</h5>
                                 </div>
@@ -302,7 +302,7 @@
                     <div class="swiper-slide">
                         <div class="courses__item">
                             <div class="courses__image image">
-                                <img src="{!! asset('assets/images/courses/courses-image1.png') !!}" alt="image">
+                                <img src="{!! asset('assets/images/site/aidelogement.jpg') !!}" alt="image">
                                 <div class="courses-price">
                                     <h5 class="fs-18">06</h5>
                                 </div>

@@ -1,5 +1,19 @@
 @extends('base')
-@section('description')Guen's education,pointe noire ,congo brasaville@endsection
+@section('keywords')
+    Structure d'orientation académique au Congo,
+    Orientation académique en République Démocratique du Congo,
+    Programme d'orientation scolaire au Congo et en RDC,
+    Système d'orientation éducative au Congo et en rdc,
+    Conseils d'orientation académique Congo,
+    Planification académique au Congo,
+    Services d'orientation scolaire au Congo,
+    Structure de conseil académique en RDC,
+    Guidance académique en République Démocratique du Congo,
+   @endsection
+@section('description') Découvrez notre structure d'orientation académique au Congo,
+offrant des conseils personnalisés pour aider les étudiants à choisir le bon parcours scolaire.
+Bénéficiez de notre expertise en planification académique en République Démocratique du Congo
+@endsection
 @section('content')
     @include('_partials._banner',['title'=>__('site.contact')])
     <!-- Contact area start here -->

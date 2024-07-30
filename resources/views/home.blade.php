@@ -59,7 +59,7 @@ Soutien académique pour élèves Congo,procédure consulaire,coaching,assurance
                 </div>
             </div>
             {{--<img src="{!! asset('assets/images/banner/hero.png') !!}" alt="image">--}}
-            <img src="{!! asset('assets/images/banner/hero.png') !!}" alt="image">
+            <img src="{!! asset('assets/images/site/banner.png') !!}" alt="image">
             <img class="hero-shape1" src="{!! asset('assets/images/shape/banner-hero-line.png') !!}" alt="shape">
             <img class="hero-shape2" src="{!! asset('assets/images/shape/banner-hero-shape.png') !!}" alt="shape">
             <img class="hero-shape3" src="{!! asset('assets/images/shape/banner-hero-circle.png') !!}" alt="shape">
@@ -271,7 +271,7 @@ Soutien académique pour élèves Congo,procédure consulaire,coaching,assurance
                 <div class="col-lg-6 order-1 order-lg-2 wow fadeInLeft" data-wow-delay="200ms"
                      data-wow-duration="1500ms">
                     <div class="faq-three__image">
-                        <img class="w-100" src="{!! asset('assets/images/faq/faq-three-image.png') !!}" alt="image">
+                        <img class="w-100" src="{!! asset('assets/images/site/faq.png') !!}" alt="image">
                         <img class="dots1 pxl-image-zoom" src="{!! asset('assets/images/shape/faq-dots-top.png') !!}" alt="shape">
                         <img class="dots2 pxl-image-zoom" src="{!! asset('assets/images/shape/faq-dots-bottom.png') !!}" alt="shape">
                         <img class="shape1" src="{!! asset('assets/images/shape/faq-shape-bottom.png') !!}" alt="shape">
@@ -303,17 +303,17 @@ Soutien académique pour élèves Congo,procédure consulaire,coaching,assurance
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="testimonial__image image">
-                                    <img src="{!! asset('assets/images/testimonial/testimonial-image1.png') !!}" alt="image">
+                                    <img src="{!! asset('assets/images/site/temoi2.avif') !!}" alt="image">
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="testimonial__image image">
-                                    <img src="{!! asset('assets/images/testimonial/testimonial-image1.png') !!}" alt="image">
+                                    <img src="{!! asset('assets/images/site/tem2.webp') !!}" alt="image">
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="testimonial__image image">
-                                    <img src="{!! asset('assets/images/testimonial/testimonial-image1.png') !!}" alt="image">
+                                    <img src="{!! asset('assets/images/site/temoignage2.png') !!}" alt="image">
                                 </div>
                             </div>
                         </div>
@@ -337,7 +337,7 @@ Soutien académique pour élèves Congo,procédure consulaire,coaching,assurance
                                         <p class="fw-500 fs-18">{!! __('site.testimonials.silde1') !!}.</p>
                                         <div class="d-flex align-items-center justify-content-between gap-4 mt-30">
                                             <div>
-                                                <h4>Marie-Claire Kofi</h4>
+                                                <h4>Severin abaka</h4>
                                                 <span>Diplômée en Marketing</span>
                                                 <div class="star mt-1">
                                                     <i class="fa-sharp fa-solid fa-star"></i>
