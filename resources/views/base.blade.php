@@ -29,6 +29,17 @@
     <!-- Style css -->
     <link rel="stylesheet" href="{!! asset('assets/css/style.css') !!}">
     <link rel="stylesheet" href="{!! asset('assets/css/custom.css') !!}">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z3DTGNSX3F"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-Z3DTGNSX3F');
+    </script>
+
 </head>
 
 <body>
