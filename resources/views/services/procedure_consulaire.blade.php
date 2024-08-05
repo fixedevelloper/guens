@@ -6,8 +6,10 @@
     "formalités consulaires",
     "assistance consulaire"
 @endsection
-@section('description')Découvrez les démarches et formalités pour les procédures consulaires. Informations complètes sur les demandes de visa,
-renouvellement de passeport, légalisation de documents et plus@endsection
+@section('description')
+    Découvrez les démarches et formalités pour les procédures consulaires. Informations complètes sur les demandes de visa,
+renouvellement de passeport, légalisation de documents et plus
+@endsection
 @section('content')
     @include('services._banner',['title'=>trans('site.service.procedure_consulaire')])
     <section class="courses-details-area pt-120 pb-120">

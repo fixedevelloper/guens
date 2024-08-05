@@ -1,7 +1,9 @@
 @extends('base')
-@section('title')Orientation Académique - Services de Conseil pour Choisir le Meilleur Parcours Scolaire @endsection
-@section('description')Découvrez nos services d'orientation académique pour aider les étudiants à choisir leur parcours scolaire et professionnel.
-Accompagnement personnalisé et conseils experts pour un avenir réussi.@endsection
+@section('title') Orientation Académique - Services de Conseil pour Choisir le Meilleur Parcours Scolaire @endsection
+@section('description')
+    Découvrez nos services d'orientation académique pour aider les étudiants à choisir leur parcours scolaire et professionnel.
+Accompagnement personnalisé et conseils experts pour un avenir réussi.
+@endsection
 @section('keywords')
     Aide pour orientation académique,Comment choisir une orientation académique,Conseils pour orientation académique,Orientation Académique,Conseil en Orientation Académique,Services d'Orientation Académique,Accompagnement Orientation Académique,Guidance Académique
 @endsection

@@ -1,6 +1,10 @@
 @extends('base')
-@section('title')Réservation Billet d’Avion au Congo : Trouvez les Meilleurs Tarifs @endsection
-@section('description')Réservez vos billets d'avion au Congo facilement et rapidement. Comparez les offres des compagnies aériennes, trouvez les meilleurs tarifs et planifiez vos voyages en toute sérénité. @endsection
+@section('title')
+    Réservation Billet d’Avion au Congo : Trouvez les Meilleurs Tarifs
+@endsection
+@section('description')
+    Réservez vos billets d'avion au Congo facilement et rapidement. Comparez les offres des compagnies aériennes, trouvez les meilleurs tarifs et planifiez vos voyages en toute sérénité.
+@endsection
 @section('keywords')Réservation Billet d’Avion au Congo,
 Billet d’Avion pour le Congo,
 Réservation Vol Congo,

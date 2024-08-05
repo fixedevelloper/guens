@@ -32,7 +32,7 @@
             <ul>
                 <li><a href="{!! route('home') !!}">{!! __('site.home') !!}</a></li>
                 <li><i class="fa-regular fa-angle-right"></i></li>
-                <li><a href="{!! route('service') !!}">{!! __('site.our_service') !!}</a></li>
+                <li><a href="#">{!! __('site.our_service') !!}</a></li>
                 <li><i class="fa-regular fa-angle-right"></i></li>
                 <li> {!! $title !!}</li>
             </ul>
