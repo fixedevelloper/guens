@@ -8,7 +8,6 @@
     <meta name="google-site-verification" content="Q65peJEa0gelkheVOIbosNiHLIkluEI6g17_ir3HzOM" />
     <meta name="description" content="@yield('description')">
     <meta name="keywords" content="@yield('keywords')">
-    <meta http-equiv="Content-Security-Policy" content="script-src 'none'">
 
     <title>@yield('title') - GUEN'S EDUCATION</title>
     <!-- Favicon img -->
