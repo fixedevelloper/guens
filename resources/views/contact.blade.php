@@ -121,7 +121,8 @@ Bénéficiez de notre expertise en planification académique en République Dém
                                 </div>
                             </div>
                             <label for="review">{!! __('site.your_message') !!}*</label>
-                            <textarea name="message" id="review"></textarea>
+                            <textarea name="message" id="review"></textarea>{{env('recaptcha_site_key')}}
+                            <div class="g-recaptcha mt-4" data-sitekey={{env('RECAPTCHA_SITE_KEY')}}></div>
                             <button class="btn-one">{!! __('site.send_now') !!}<i class="fa-light fa-arrow-right-long"></i></button>
                         </form>
                     </div>
@@ -131,3 +132,6 @@ Bénéficiez de notre expertise en planification académique en République Dém
     </section>
     <!-- Contact area end here -->
 @endsection
+@push('js')
+    <script async src="https://www.google.com/recaptcha/api.js"></script>
+@endpush

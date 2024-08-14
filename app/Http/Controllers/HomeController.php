@@ -10,10 +10,12 @@ use App\Models\Contact;
 use App\Models\Message;
 use App\Models\RegisterOnline;
 use Flasher\Prime\Flasher;
+use GuzzleHttp\Client;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Validator;
+use Symfony\Component\HttpFoundation\IpUtils;
 
 class HomeController extends Controller
 {
@@ -45,6 +47,24 @@ class HomeController extends Controller
                 flash()->error('Operation Failed');
                 return back()->with($validator->errors()->getMessages());
             }
+            $recaptcha = $request->input('g-recaptcha-response');
+
+            if (is_null($recaptcha)) {
+                flash()->error("  Please complete the recaptcha again to proceed. ");
+                return redirect()->back();
+            }
+
+            $url = "https://www.google.com/recaptcha/api/siteverify";
+            $resp=new Client();
+            $params = [
+                'secret' => env('RECAPTCHA_SECRET_KEY'),
+                'response' => $recaptcha,
+                'remoteip' => IpUtils::anonymize($request->ip())
+            ];
+           // $response= $resp->post($url, $params);
+
+            //$result = json_decode($response);
+
             DB::beginTransaction();
             $contact=Contact::query()->firstWhere(['email'=>$request->email]);
             if (is_null($contact)){
