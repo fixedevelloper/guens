@@ -8,7 +8,7 @@
     <meta name="google-site-verification" content="Q65peJEa0gelkheVOIbosNiHLIkluEI6g17_ir3HzOM" />
     <meta name="description" content="@yield('description')">
     <meta name="keywords" content="@yield('keywords')">
-
+    <link rel="canonical" href="{{ url(Request::url()) }}" />
     <title> @yield('title') - GUEN'S EDUCATION</title>
     <!-- Favicon img -->
     <link rel="shortcut icon" href="{!! asset('faicon.png') !!}">
