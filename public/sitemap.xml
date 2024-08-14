@@ -1,75 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
     <url>
-        <loc>http://localhost:8001/</loc>
+        <loc>https://guens-education.com/</loc>
     
             </url>
     <url>
-        <loc>http://localhost:8001/home</loc>
+        <loc>https://guens-education.com/home</loc>
     
             </url>
     <url>
-        <loc>http://localhost:8001/about</loc>
+        <loc>https://guens-education.com/service/aide_logement</loc>
     
             </url>
     <url>
-        <loc>http://localhost:8001/formation</loc>
+        <loc>https://guens-education.com/representation_rdc</loc>
     
             </url>
     <url>
-        <loc>http://localhost:8001/destination</loc>
+        <loc>https://guens-education.com/partenaire</loc>
     
             </url>
     <url>
-        <loc>http://localhost:8001/partenaire</loc>
+        <loc>https://guens-education.com/formation</loc>
     
             </url>
     <url>
-        <loc>http://localhost:8001/representation_rdc</loc>
+        <loc>https://guens-education.com/about</loc>
     
             </url>
     <url>
-        <loc>http://localhost:8001/representation_congo</loc>
+        <loc>https://guens-education.com/destination</loc>
     
             </url>
     <url>
-        <loc>http://localhost:8001/service/orientation_academique</loc>
+        <loc>https://guens-education.com/representation_congo</loc>
     
             </url>
     <url>
-        <loc>http://localhost:8001/service/coaching</loc>
+        <loc>https://guens-education.com/contact</loc>
     
             </url>
     <url>
-        <loc>http://localhost:8001/service/procedure_consulaire</loc>
+        <loc>https://guens-education.com/service/orientation_academique</loc>
     
             </url>
     <url>
-        <loc>http://localhost:8001/service/assurance</loc>
+        <loc>https://guens-education.com/service/coaching</loc>
     
             </url>
     <url>
-        <loc>http://localhost:8001/service/reservation_billet</loc>
+        <loc>https://guens-education.com/register</loc>
     
             </url>
     <url>
-        <loc>http://localhost:8001/service/aide_logement</loc>
+        <loc>https://guens-education.com/faq</loc>
     
             </url>
     <url>
-        <loc>http://localhost:8001/contact</loc>
+        <loc>https://guens-education.com/service/reservation_billet</loc>
     
             </url>
     <url>
-        <loc>http://localhost:8001/faq</loc>
-    
-            </url>
-    <url>
-        <loc>http://localhost:8001/register</loc>
-    
-            </url>
-    <url>
-        <loc>http://localhost:8001/service</loc>
+        <loc>https://guens-education.com/service</loc>
     
             </url>
 </urlset>

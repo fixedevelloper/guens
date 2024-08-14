@@ -2,10 +2,12 @@
 
 namespace App\Console\Commands;
 
+use Carbon\Carbon;
 use Illuminate\Console\Command;
+use Psr\Http\Message\UriInterface;
 use Spatie\Sitemap\Sitemap;
 use Spatie\Sitemap\SitemapGenerator;
-
+use Spatie\Sitemap\Tags\Url;
 class GenerateSitemap extends Command
 {
     /**
@@ -27,9 +29,17 @@ class GenerateSitemap extends Command
      */
     public function handle()
     {
-        //$postsitmap = Sitemap::create();
-        SitemapGenerator::create('https://guens-education.com')->writeToFile(public_path('sitemap.xml'));
-       //$postsitmap->writeToFile(public_path('sitemap.xml'));
+/*        SitemapGenerator::create('https://guens-education.com')
+            ->writeToFile(public_path('sitemap.xml'));*/
+        SitemapGenerator::create('https://guens-education.com')
+        ->shouldCrawl(function (UriInterface $url) {
+            // All pages will be crawled, except the contact page.
+            // Links present on the contact page won't be added to the
+            // sitemap unless they are present on a crawlable page.
+
+            return strpos($url->getPath(), '/gu8951pkgm74congo321admin/') === false;
+        })
+            ->writeToFile(public_path('sitemap.xml'));
 
     }
 }

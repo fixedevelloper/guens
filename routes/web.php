@@ -61,8 +61,4 @@ Route::group(['prefix' => 'gu8951pkgm74congo321admin'],function () {
         ->name('inscription');
     Route::match(["POST", "GET"], '/mails', [BackendController::class, 'emails'])
         ->name('mails');
-    Route::match(["POST", "GET"], '/assurance', [HomeController::class, 'assurance'])
-        ->name('assurance');
-    Route::match(["POST", "GET"], '/procedure_consulaire', [HomeController::class, 'procedure_consulaire'])
-        ->name('procedure_consulaire');
 });
