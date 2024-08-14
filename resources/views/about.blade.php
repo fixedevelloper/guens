@@ -1,4 +1,5 @@
 @extends('base')
+@section('title')Procédure consulaire en République Démocratique @endsection
 @section('keywords')
     Structure de procédure consulaire au Congo,
     Procédure consulaire en République Démocratique du Congo,

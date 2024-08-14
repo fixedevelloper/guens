@@ -9,7 +9,7 @@
     <meta name="description" content="@yield('description')">
     <meta name="keywords" content="@yield('keywords')">
 
-    <title>@yield('title') - GUEN'S EDUCATION</title>
+    <title> @yield('title') - GUEN'S EDUCATION</title>
     <!-- Favicon img -->
     <link rel="shortcut icon" href="{!! asset('faicon.png') !!}">
     <!-- Bootstarp min css -->

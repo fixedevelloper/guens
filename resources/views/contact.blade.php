@@ -1,4 +1,5 @@
 @extends('base')
+
 @section('keywords')
     Structure d'orientation académique au Congo,
     Orientation académique en République Démocratique du Congo,
@@ -10,6 +11,7 @@
     Structure de conseil académique en RDC,
     Guidance académique en République Démocratique du Congo,
    @endsection
+@section('title') Trouvez les Meilleures Subventions et Assistances Disponibles @endsection
 @section('description') Découvrez notre structure d'orientation académique au Congo,
 offrant des conseils personnalisés pour aider les étudiants à choisir le bon parcours scolaire.
 Bénéficiez de notre expertise en planification académique en République Démocratique du Congo

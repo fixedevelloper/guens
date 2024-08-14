@@ -7,6 +7,7 @@ namespace App\Http\Controllers;
 use App\Helper\ContactExport;
 use App\Helper\InscriptionExport;
 use App\Models\Contact;
+use App\Models\Message;
 use App\Models\RegisterOnline;
 use Illuminate\Http\Request;
 use Maatwebsite\Excel\Facades\Excel;
@@ -37,8 +38,9 @@ class backendController extends Controller
         ]);
     }
     function emails(Request $request){
+        $messages=Message::query()->orderByDesc('id')->paginate(20);
         return view('bakend.emails',[
-
+            'messages'=>$messages
         ]);
     }
 }

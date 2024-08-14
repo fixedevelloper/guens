@@ -1,4 +1,5 @@
 @extends('base')
+@section('title')Conseils d'orientation académique @endsection
 @section('keywords')
     Questions fréquentes orientation scolaire en République Démocratique du Congo,
     Conseils d'orientation académique RDC,

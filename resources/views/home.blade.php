@@ -1,4 +1,7 @@
 @extends('base')
+@section('title')
+    Construisez votre Carriere
+@endsection
 @section('keywords')
 Guen,education,formation,Planification académique Congo,Guidance académique pour étudiants Congo,
 Accompagnement dans le choix de carrière scolaire Congo,
