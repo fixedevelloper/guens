@@ -162,17 +162,18 @@
 
                 <form id="langform" action="{{ route('language') }}" method="get" class="d-none d-lg-block d-flex align-items-center">
                     <div class="input-group mb-3">
-                        @if (session('locale') == 'fr')
-                        <img class="input-group-text" height="50" src="{!! asset('assets/images/lang/fr.png') !!}" alt="fr">
-                        @else
+                        @if (session('locale') == 'en')
                             <img class="input-group-text" height="50" src="{!! asset('assets/images/lang/gb.png') !!}" alt="fr">
+
+                        @else
+                            <img class="input-group-text" height="50" src="{!! asset('assets/images/lang/fr.png') !!}" alt="fr">
                         @endif
                         <div class="select-option">
                             <select name="lang" id="lang" onchange="this.form.submit()">
-                                <option value="en" @if (Session::get('locale', 'en') == 'en') selected @endif> {!! __('site.english') !!}
+                                <option value="fr" @if (session('locale') == 'fr') selected @endif> {!! __('site.french') !!}</option>
+                                <option value="en" @if (session('locale') == 'en') selected @endif> {!! __('site.english') !!}
                                 </option>
 
-                                <option value="fr" @if (session('locale') == 'fr') selected @endif> {!! __('site.french') !!}</option>
                             </select>
                         </div>
                     </div>

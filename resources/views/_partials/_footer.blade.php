@@ -71,8 +71,12 @@
                 <h3 class="footer-title">{!! __('site.newletter.title') !!}</h3>
                 <p class="mb-20">{!! __('site.newletter.description') !!}.</p>
                 <div class="footer-newsletter">
-                    <input type="text" placeholder="Your email address">
-                    <button>{!! __('site.newletter.subscribe_ow') !!}</button>
+                    <form action="{{ route('registerNewletter') }}" method="POST">
+                        @csrf
+                        <input name="email" type="text" placeholder="Your email address">
+                        <button>{!! __('site.newletter.subscribe_ow') !!}</button>
+                    </form>
+
                 </div>
             </div>
         </div>

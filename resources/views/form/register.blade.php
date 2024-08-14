@@ -15,24 +15,24 @@
             <div class="row g-4">
                 <div class="col-6">
                     <label for="name">{!! __('site.your_name') !!}*</label>
-                    <input id="name" type="text" placeholder="{!! __('site.your_name') !!}">
+                    <input id="name" name="name" type="text" placeholder="{!! __('site.your_name') !!}" required>
                 </div>
                 <div class="col-6">
                     <label for="email">{!! __('site.your_email') !!}*</label>
-                    <input id="email" type="email" placeholder="{!! __('site.your_email') !!}">
+                    <input id="email" name="email" type="email" placeholder="{!! __('site.your_email') !!}" required>
                 </div>
                 <div class="col-6">
-                    <label for="email">{!! __('site.phone') !!}*</label>
-                    <input id="email" type="text" placeholder="{!! __('site.phone') !!}">
+                    <label for="phone">{!! __('site.phone') !!}*</label>
+                    <input id="phone" name="phone" type="text" placeholder="{!! __('site.phone') !!}" required>
                 </div>
                 <div class="col-6">
                     <label for="email">{!! __('site.date_born') !!}*</label>
-                    <input id="email" type="date" placeholder="{!! __('site.date_born') !!}">
+                    <input id="email" name="date_born" type="date" placeholder="{!! __('site.date_born') !!}">
                 </div>
             </div>
             <div class="col-12 mb-3">
                 <label for="email">{!! __('site.service.service') !!}*</label>
-                <select class="form-select">
+                <select name="service" class="form-select">
                     <option value="{!! __('site.service.reservation_billet_avion') !!}">
                         {!! __('site.service.reservation_billet_avion') !!}</option>
                     <option value="{!! __('site.service.assurance') !!}">
@@ -52,7 +52,8 @@
             <label for="review">{!! __('site.your_message') !!}*</label>
             <textarea name="review" id="review"></textarea>
             </div>
-            <a href="#0" class="btn-one">{!! __('site.send_now') !!}<i class="fa-light fa-arrow-right-long"></i></a>
+            @csrf
+            <button  class="btn-one">{!! __('site.send_now') !!}<i class="fa-light fa-arrow-right-long"></i></button>
         </form>
     </div>
 </div>

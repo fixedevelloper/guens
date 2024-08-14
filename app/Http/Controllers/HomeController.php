@@ -8,8 +8,11 @@ namespace App\Http\Controllers;
 use App\Helper\Helper;
 use App\Models\Contact;
 use App\Models\Message;
+use App\Models\RegisterOnline;
+use Flasher\Prime\Flasher;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Validator;
 
 class HomeController extends Controller
@@ -31,6 +34,7 @@ class HomeController extends Controller
     }
     public function contact(Request $request)
     {
+        //Helper::mailajet();
         if ($request->method()=='POST'){
             $validator = Validator::make($request->all(), [
                 'name' => 'required|string',
@@ -38,6 +42,7 @@ class HomeController extends Controller
                 'email' => 'required|email'
             ]);
             if ($validator->fails()) {
+                flash()->error('Operation Failed');
                 return back()->with($validator->errors()->getMessages());
             }
             DB::beginTransaction();
@@ -58,6 +63,7 @@ class HomeController extends Controller
                 'message'=>$request->message
             ]);
             DB::commit();
+            flash()->success('Operation completed successfully');
         }
         return view('contact', [
 
@@ -161,7 +167,67 @@ class HomeController extends Controller
 
         ]);
     }
-    function registerFormation(){
+    function registerFormation(Request $request){
+        if ($request->method()=='POST'){
+            $validator = Validator::make($request->all(), [
+                'name' => 'required|string',
+                'phone' => 'required',
+                'service' => 'required',
+                'email' => 'required|email'
+            ]);
+            if ($validator->fails()) {
+                flash()->error('Operation echec.');
+                return back()->with($validator->errors()->getMessages());
+            }
+            DB::beginTransaction();
+            $contact=Contact::query()->firstWhere(['email'=>$request->email]);
+            if (is_null($contact)){
+                $contact=new Contact();
+                $contact->email=$request->email;
+            }
+            $contact->name=$request->name;
+            $contact->save();
+            $register=new RegisterOnline();
+            $register->date_born=$request->date_born;
+            $register->service=$request->service;
+            $register->contact_id=$contact->id;
+            $register->save();
+            Helper::send_contact([
+                'name'=>$request->name,
+                'email'=>$request->email,
+                'message'=>$request->message
+            ]);
+            DB::commit();
+            flash()->success('Operation completed successfully');
+        }
         return view('form.register');
+    }
+    function registerNewletter(Request $request){
+        //toastr()->success('Data has been saved successfully!');
+        if ($request->method()=='POST'){
+            $validator = Validator::make($request->all(), [
+                'email' => 'required|email'
+            ]);
+            if ($validator->fails()) {
+                flash()->error('Adresse email non valide');
+                return back()->with($validator->errors()->getMessages());
+            }
+            DB::beginTransaction();
+            $contact=Contact::query()->firstWhere(['email'=>$request->email]);
+            if (is_null($contact)){
+                $contact=new Contact();
+                $contact->email=$request->email;
+            }
+            $contact->name=$request->name;
+            $contact->save();
+            Helper::send_contact([
+                'name'=>$request->name,
+                'email'=>$request->email,
+                'message'=>$request->message
+            ]);
+            DB::commit();
+            flash()->success('Operation completed successfully');
+        }
+        return back();
     }
 }

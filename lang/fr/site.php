@@ -2,7 +2,7 @@
 return [
     'quick_link' => 'Lien rapide',
     'banner' => [
-        'title' => 'Construsez votre
+        'title' => 'Construisez votre
                     <span class="primary-color">Carriere</span>',
         'description' => "Aider de nombreux etudiants subsahariens non seulement,a bien s oriénter,mais egalement de pouvoir définir avec precision la vision de leur plan de carrière",
         'link_button' => "Explore Services"
@@ -12,7 +12,7 @@ return [
         'title2' => 'Carriere',
         'title' => 'A PROPOS DE NOUS',
         'description' => "<b>GUEN'S EDUCATION</b> est une structure d'orientation académique admistrée par des professionnels du secteur .
-Et qui a pour mission pricipale l'encadrement de la concrétisation des projets d'etudes et professionnels dans un premier temps vers le maroc.
+Et qui a pour mission principale l'encadrement de la concrétisation des projets d'etudes et professionnels dans un premier temps vers le maroc.
 <p>Et tout ceci dans le but de garantir un service de qualité</p>",
         'but'=>'But',
         'mission'=>'Objectif',
@@ -86,7 +86,7 @@ Et qui a pour mission pricipale l'encadrement de la concrétisation des projets 
     'testimonials' => [
         'title' => "Témoignages",
         'what' => "Qu'est qu'on",
-        'our' => "Our",
+        'our' => "",
         'to_say' => "dit",
         'to_our' => "de nous",
         'silde1' => "Je suis diplômée depuis trois ans maintenant, et je tiens à exprimer ma gratitude envers la structure d'orientation académique qui m'a aidée à choisir ma voie professionnelle. Leur assistance a été déterminante dans ma décision de poursuivre des études en marketing, un domaine qui me passionne profondément. Ils ont non seulement aidé à choisir le bon programme d'études, mais ont également offert des conseils précieux sur la préparation aux entretiens et la recherche d'emploi. Leur soutien m'a permis de réussir
@@ -117,7 +117,7 @@ Et qui a pour mission pricipale l'encadrement de la concrétisation des projets 
     ],
     'contact_us' => 'Contactez-nous',
     'footer_description' => "<b>GUEN'S EDUCATION</b> est une structure d'orientation académique admistrée par des professionnels du secteur .
-Et qui a pour mission pricipale l'encadrement de la concrétisation des projets d'etudes et professionnels dans un premier temps vers le maroc.
+Et qui a pour mission principale l'encadrement de la concrétisation des projets d'etudes et professionnels dans un premier temps vers le maroc.
 <p>Et tout ceci dans le but de garantir un service de qualité</p>",
     'home' => 'Accueil',
     'about_us' => "À propos de nous",

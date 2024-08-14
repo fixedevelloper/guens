@@ -111,11 +111,11 @@ Bénéficiez de notre expertise en planification académique en République Dém
                             <div class="row g-4">
                                 <div class="col-6">
                                     <label for="name">{!! __('site.your_name') !!}*</label>
-                                    <input name="name" id="name" type="text" placeholder="{!! __('site.your_name') !!}">
+                                    <input name="name" id="name" type="text" placeholder="{!! __('site.your_name') !!}" required>
                                 </div>
                                 <div class="col-6">
                                     <label for="email">{!! __('site.your_email') !!}*</label>
-                                    <input name="email" id="email" type="email" placeholder="{!! __('site.your_email') !!}">
+                                    <input name="email" id="email" type="email" placeholder="{!! __('site.your_email') !!}" required>
                                 </div>
                             </div>
                             <label for="review">{!! __('site.your_message') !!}*</label>
